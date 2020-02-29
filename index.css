@@ -15,14 +15,14 @@
 body {
   min-height: 100vh;
   color: var(--main-print);
-  Font-Family: 'Fauna One', Serif;
+  font-family: 'Open Sans', sans-serif;
   width: 100%;
   color: #eee;
 }
 
 
 h1, h2, h3 {
-  Font-Family: 'Cinzel', Cursive;
+  font-family: 'Ubuntu', sans-serif;
   color: #333;
 }
 
@@ -48,14 +48,12 @@ h1, h2, h3 {
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .header {
-  margin: 6rem 2rem 0;
-  width: fit-content;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: var(--main-splash);
 }
 
@@ -71,14 +69,16 @@ h1, h2, h3 {
 
 .bio {
   background-color: var(--main-splash);
-  min-height: 40rem;
+  min-height: 30rem;
+  min-width: 15rem;
+
   font-size: 1.2rem;
 }
 
 .tech {
   background-color: var(--main-dark);
-  min-width: 20rem;
-  margin: 4rem 2rem;
+  min-width: 15rem;
+  margin: 4rem auto;
   min-height: 35rem;
 }
 
@@ -115,4 +115,61 @@ footer {
   width: 100%;
   min-height: 3rem;
   background-color: var(--main-splash);
+}
+
+
+
+/* ***** MEDIA QUERIES ***** */
+
+@media only screen and (min-width: 700px) {
+  .navbar {
+    padding: .7rem;
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .section {
+    max-width: 62.5rem;
+  }
+
+  .about-me {
+    display: flex;
+  }
+
+  .blurb {
+    max-width: 30rem;
+  }
+
+  .name {
+    font-size: 5rem;
+  }
+
+  .about-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .tech {
+    margin: 0;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .project-card {
+    flex: 1 0 auto;
+  }
+
+  .form-div {
+    margin: 0;
+  }
 }
